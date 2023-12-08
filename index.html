@@ -1,7 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Personal Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Research</a>
+        <a href="#">Projects</a>
+        <a href="#">Publications</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2>Welcome to my personal portfolio!</h2>
+        <p>I am a passionate and driven individual with a strong background in [your field]. I am currently seeking opportunities to [your goals].</p>
+        <p>On this website, you can learn more about my research interests, projects, publications, and contact me for potential collaborations or career opportunities.</p>
+      </section>
+      <section class="highlights">
+        <h3>Highlights</h3>
+        <ul>
+          <li>...</li>
+          <li>...</li>
+          <li>...</li>
+        </ul>
+      </section>
+      <section class="call-to-action">
+        <h3>Interested in working with me?</h3>
+        <p>Feel free to contact me through any of the channels listed below.</p>
+        <ul class="social-media">
+          <li><a href="#">...</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">...</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
