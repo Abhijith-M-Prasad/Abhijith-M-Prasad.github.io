@@ -4,3 +4,9 @@ body{
     padding: 0;
     background-color: #13caee;
   }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
