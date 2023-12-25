@@ -1,13 +1,5 @@
-body{
-    /* font-family proffesional*/
-    font-family: Georgia;
-    margin: 0;
-    padding: 0;
-    background-color: #13caee;
-  }
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
+.blog{
+    border: 1px solid #ddd;
     padding: 20px;
-  }
+    margin-bottom: 20px;
+}
