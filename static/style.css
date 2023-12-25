@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #13caee;
+    background-color: #ede6e6;
   }
   
   .container {
@@ -34,6 +34,7 @@ body {
   .intro {
     padding: 20px;
     margin-bottom: 20px;
+    background-color: rgb(102, 0, 255);
   }
   
   .highlights {
