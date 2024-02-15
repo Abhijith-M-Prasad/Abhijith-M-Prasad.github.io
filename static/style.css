@@ -1,21 +1,29 @@
+/* body*/
+
 body {
     font-family: sans-serif;
+    color:#4b2b2b;
     margin: 0;
     padding: 0;
-    background-color: #dad5d5;
+    background-color: #4b2b2b;
   }
   
+/*-----------------------------------------------------------------------------------
+container*/
   .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 50%;
   }
   
+/*-----------------------------------------------------------------------------------
+/* header*/
   header {
     background-color: #f1f1f1;
     padding: 20px;
-    border-radius: 1%;
+    border-radius: 8px;
+    margin-bottom: 20px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
   }
   
@@ -25,7 +33,7 @@ body {
   }
   
   nav a {
-    color: #dec7c7;
+    color: #070707;
     padding: 10px;
     text-decoration: none;
   }
@@ -33,26 +41,50 @@ body {
   nav a:hover {
     background-color: #ddd;
   }
-  
+
+/*-----------------------------------------------------------------------------------
+profile*/
+  .profile {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+  }
+
+/*-----------------------------------------------------------------------------------
+intro*/
   .intro {
     background-color: #f1f1f1;
     border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 8px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
   }
-  
+
+/*-----------------------------------------------------------------------------------
+Experience*/
   .Experience {
     background-color: #f1f1f1;
     border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 8px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .Experience h4 {
+    margin-bottom: 5px;
+  }
+
+/*-----------------------------------------------------------------------------------
+call-to-action*/
   .call-to-action {
     background-color: #f1f1f1;
     padding: 20px;
+    border-radius: 8px;
   }
   
   .social-media {
@@ -70,9 +102,15 @@ body {
     color: #b4aeae;
     padding: 5px;
     text-decoration: none;
+    color: #0b0a0a;
   }
   
   .social-media a:hover {
     background-color: #ddd;
+  }
+
+  .social-media li img {
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
   }
   

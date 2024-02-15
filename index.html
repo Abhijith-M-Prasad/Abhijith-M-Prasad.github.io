@@ -5,27 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhijith Prasad M - Personal Portfolio</title>
   <link rel="stylesheet" href="static/style.css">
-  <link rel="icon" type="image/png" href="static/tab_icon.png">
+  <link rel="icon" type="image/png" href="static/icons/tab_icon.png">
 </head>
+<span style="font-family: 'Times New Roman', Times, serif">
 <body>
   <div class="container">
-    <header>
+    <div class="profile">
+      <header>
       <h1>Abhijith Prasad M</h1>
-      <nav>
-        <a href="Blogs/blog.html">Blog</a>
-        <a href="test/test.html">Test</a>
+        <nav>
+          <a href="Blogs/blog.html">Blog</a>
+          <a href="test/test.html">Test</a>
         <!--
         <a href="#">Projects</a>
         <a href="#">Publications</a>
         <a href="#">Contact</a>
       -->
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
     <main>
       <section class="intro">
-        <h2>Career Objective:</h2>
+        <h2>Career Objective</h2>
         <p>To pursue a career in fields related to software engineering, Deep learning and AI software stack. Increase my knowledge in training large neural networks on large dataset, fine tuning foundational models for specific tasks and iteratively optimizing them for better performance.</p>
-        <p>Interested areas: Computer Vision, Natural Language Processing,Generative AI, Software Engineering
+        <p><b>Interested areas:</b> Computer Vision, Natural Language Processing,Generative AI, Software Engineering
             </p>
         <!-- 
         <p>I am a passionate and driven individual with a strong background in [your field]. I am currently seeking opportunities to [your goals].</p>
@@ -33,36 +36,73 @@
       -->
       </section>
       <section class="Experience">
-        <h3>Experience</h3>
+        <h2>Experience</h2>
         <ul>
           <li>
-            <b>Project at Naval Physical & Oceanographic Laboratory (NPOL) (2023-)</b>
+            <h4>Project at Naval Physical & Oceanographic Laboratory (NPOL) (2023-)</h4>
             <ul>
-            <li>Area: Ocean State modelling using Deep Learning</li>
+            <li><b>Area:</b> Ocean State modelling using Deep Learning</li>
             <li>Researching current trends in Deep Learning applications for ocean modeling.</li>
             <li>Addressing challenges: complex ocean processes (3D space and time), handling nan values, seasonal variations, and extensive computational requirements.</li>
             <li>Explored Architectures: Feed Forward Nets (FFN), Convolutional Neural Nets (CNN), LSTM, Conv-LSTM, Transformer.</li>
             <li>Conducting training for fellow oceanography researchers on Deep Learning methodologies, some of the topics covered:</li>
+            <ul>
             <li>Overview of Modeling  (models, optimizers, loss functions).</li>
             <li>written an autograd engine wrapping numpy to takeaway some abstractions of torch and show computational graph and its internal working.</li>
             <li>Specific focus on FFNs (linear projection, nonlinearities, weight initialization, regularization), and CNNs.</li>
             </ul>
+          </ul>
           </li>
-          <li>...</li>
-          <li>...</li>
+          <hr>
+          <li>
+            <h4>Fuel Cover state and contact point Detection in cars for automated fuel filling using Computer Vision and Deep Learning:</h4>
+            <ul>
+              <li><b>objective:</b> from the camera frames predict, bounding box for localizing fuel cover, classify weather it is fully open , closed or in between and key-points for robotic arm to latch on and operate on the fuel cover</li>
+              <li><b>Data:</b> this was the most  challenging part we used smartphone to collect images and labelled it using opensource tool labelme. Then converted labels it to fit the custom detection head. The dataset was very limited hence we have to use pretrained networks and extensive data augmentations.</li>
+              <li><b>Model:</b> A single stage Yolo like model was implemented, it uses pretrained ResNet50 as backbone and a custom CNN head which initializes a raster for detection of fuel cover and contact point.</li>
+              <li><b>Loss Function:</b>it uses a custom implemented Yolo like loss function cross entropy for classification, binary cross entropy for detection and MSE loss for bounding box and contact point, with weighting hyperparameters for different loss components.</li>
+              <li><b>Training:</b> cached the backbone features and trained CNN head till convergence and then unfreezed the top layers of backbone and trained full model till convergence.</li>
+              <li><b>Data Augmentations:</b>Used Albumentations library, written custom data augmentations e.g. the fuel covers have stickers on them so we can use that as a mode of data augmentation.</li>
+              <li><b>Inference:</b> run the model in evaluation mode and also implemented a post processing that overlays the bounding box and contact point to the video frame.</li>
+              <li><b>Future Work:</b>
+                <ul>
+                  <li>implement a data engine (similar to tesla)</li> 
+                  <li>implement LoRa, since we have 2 task fuel cap and filler cap detection we do not want to use 2 separate backbone rather use 2 switchable LoRa model for single backbone for 2 tasks.</li>
+                  <li>stereoscopic depth (occupancy tracking like functionality)</li>
+                  <li>Robotic arm integration</li> 
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <hr>
+          <li>
+            <h4>Internship in ThinkPalm Technologies Pvt. Ltd. (2023)</h4>
+            <ul>
+              <li>Developed a prototype for a virtual trainer app utilizing pose estimation computer vision models.</li>
+              <li>Surveyed research articles on pose estimation methodologies.</li>
+              <li>Explored Frameworks:</li>
+              <ul>
+                <li>Media-Pipe</li>
+                <li>OpenCV</li>
+                <li>Flask</li>
+                <li>NumPy</li>
+                <li>Py-Torch</li>
+              </ul>
+          </li>
         </ul>
       </section>
       <section class="call-to-action">
-        <h3><b><u>Contact Me</u></b></h3>
+        <h3><b>Contact Me</b></h3>
         <p>Feel free to contact me through any of the channels listed below.</p>
         <ul class="social-media">
-          <li><a href="#">...</a></li>
-          <li><a href="#">...</a></li>
-          <li><a href="#">...</a></li>
+          <li><a href="http://www.linkedin.com/in/abhijith-prasad-m-baa85a223"><img src="static/icons/LinkedIn.png" alt="LinkedIn"> LinkedIn</a></li>
+          <li><a href="https://github.com/Abhijith-M-Prasad"><img src="static/icons/GitHub.png" alt="GitHub"> GitHub</a></li>
+          <li><a href="https://x.com/Abhijit29752470?t=kEuiLLkQvDRWn8bhWkVQvg&s=08"><img src="static/icons/X.png" alt="X"> X</a></li>
         </ul>
       </section>
     </main>
   </div>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+</span>
 </html>
