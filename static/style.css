@@ -5,7 +5,7 @@ body {
     color:#4b2b2b;
     margin: 0;
     padding: 0;
-    background-color: #4b2b2b;
+    background-color: #847c7c;
   }
   
 /*-----------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ container*/
   
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
   }
   
   nav a {
@@ -77,6 +77,29 @@ Experience*/
 
   .Experience h4 {
     margin-bottom: 5px;
+  }
+
+/*-----------------------------------------------------------------------------------
+test*/
+  .test {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .test h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .embedded-iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
   }
 
 /*-----------------------------------------------------------------------------------
