@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 .blog{
     border: 1px solid #ddd;
+=======
+body{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #13caee;
+  }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+>>>>>>> parent of 957d5be (mod)
     padding: 20px;
     margin-bottom: 20px;
 }
