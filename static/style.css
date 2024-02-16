@@ -21,16 +21,18 @@ container*/
 /*-----------------------------------------------------------------------------------
 /* header*/
   header {
+    text-align: center;
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
   }
   
   nav {
+    margin-top: 0px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
   
   nav a {
@@ -54,15 +56,25 @@ profile*/
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
   }
 
+  .profilepic img{
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-bottom: -20px;
+  }
+
 /*-----------------------------------------------------------------------------------
 intro*/
   .intro {
     background-color: #f1f1f1;
     border: 1px solid #ddd;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+  }
+  .intro h2 {
+    margin-top: 0;
+    text-align: center;
   }
 
 /*-----------------------------------------------------------------------------------
@@ -71,9 +83,14 @@ Experience*/
     background-color: #f1f1f1;
     border: 1px solid #ddd;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .Experience h2 {
+    margin-top: 0;
+    font-size: 30px;
   }
 
   .Experience h4 {
